@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLAZO Jerseys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        .seccionCatalogo{
+            height: auto;
+        }
+        .seccionHero{
+            width: 100%;
+            height: auto;
+            padding: 80px 0;
+            background-color: #14213D;
+            display: flex;
+            justify-content: center;
+        }
+
+        .seccionHeroContenedor{
+            width: 100%;
+            height: auto;
+            margin: 0 47px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        } 
+
+        .seccionHeroContenedor > span{
+            width: 100%;
+            height: auto;
+            margin-bottom: 12px;
+            font-family: var(--fuentePrincipal);
+            font-weight: 800;
+            font-size: 11px;
+            letter-spacing: 1.88px;
+            color: var(--colorAmarillo);
+        }
+
+        .seccionHeroContenedor > h2{
+            width: 100%;
+            height: auto;
+            font-family: var(--fuenteTitulos);
+            font-weight: 400;
+            font-size: 68px;
+            color: var(--colorBlanco);
+        }
+
+        .seccionHeroContenedor > p{
+            width: 650px;
+            height: auto;
+            margin-left:285px;
+            margin-top: 18px;
+            font-family: var(--fuentePrincipal);
+            font-weight: 400;
+            font-size: 16px;
+            color: color-mix(in srgb, var(--colorBlanco) 67%, transparent);
+        }
+
+        .seccionCatalogo{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .productosContenedor{
+            width: 1024px;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 24px;
+            row-gap: 24px;
+            margin: 80px 0;
+        }
+
+        @media (max-width: 768px){
+            .seccionHeroContenedor > p{
+                margin: 0;
+            }
+
+            .productosContenedor{
+                width: 705px;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .productoTarjeta{
+                width: 340px;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 425px){
+            .seccionHeroContenedor > h2{
+                font-size: 48px;
+            }
+
+            .seccionCatalogo{
+                height: auto;
+            }
+            
+            .seccionHeroContenedor > p{
+                width: 100%;
+                font-size: 13px;
+                margin-top: 10px;
+            }
+            
+            .productosContenedor{
+                width: 342px;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="cabecera">
+        <div class="contenedor">
+            <a href="index.html">
+                <div class="logo">
+                    <h1>GOLAZO<br><span>Jerseys</span></h1>
+                </div>
+            </a>
+
+            <nav class="navegacion">
+                <ul>
+                    <li><a href="index.html" id="inicio"> Inicio</a></li>
+                    <li><a href="catalogo.html" id="catalogo" class="active">Catálogo</a></li>
+                    <li><a href="tercerPagina.html" id="liga">Ligas y selecciones</a></li>
+                </ul>
+                <a href="catalogo.html" id="comprar">Comprar ahora</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="seccionHero">
+            <div class="seccionHeroContenedor">
+                <span>LA COLECCIÓN COMPLETA</span>
+                <h2>ELIGE TUS COLORES</h2>
+                <p>Clubes, selecciones y camisetas que cuentan grandes historias. Todas originales, todas listas para alentar.</p>
+            </div>
+        </section>
+
+        <div class="seccionCatalogo">
+            <div class="productosContenedor">
+                <article class="productoTarjeta">
+                    <div class="contenedorImagen">
+                        <img src="img/camiseta_BRA.png" alt="Camiseta Brasil">
+                    </div>
+                    <div class="productoTarjetaTexto">
+                        <p>CAMISETA OFICIAL</p>
+                        <h2>Camiseta Brasil</h2>
+                        <span>Camiseta 2025/2026 - Nike</span>
+                        <div>
+                            <strong>$35.00</strong>
+                            <a href="tercerPagina.html">Ver más</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="productoTarjeta">
+                    <div class="contenedorImagen">
+                        <img src="img/camiseta_NOR.png" alt="Camiseta Noruega">
+                    </div>
+                    <div class="productoTarjetaTexto">
+                        <p>CAMISETA OFICIAL</p>
+                        <h3>Camiseta Noruega</h3>
+                        <span>Camiseta 2025/2026 - Nike</span>
+                        <div>
+                            <strong>$35.00</strong>
+                            <a href="tercerPagina.html">Ver más</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="productoTarjeta">
+                    <div class="contenedorImagen">
+                        <img src="img/camiseta_CRO.png" alt="Camiseta Croacia">
+                    </div>
+                    <div class="productoTarjetaTexto">
+                        <p>CAMISETA OFICIAL</p>
+                        <h3>Camiseta Croacia</h3>
+                        <span>Camiseta 2025/2026 - Nike</span>
+                        <div>
+                            <strong>$30.00</strong>
+                            <a href="tercerPagina.html">Ver más</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="productoTarjeta">
+                    <div class="contenedorImagen">
+                        <img src="img/camiseta_EC.png" alt="Camiseta Ecuador">
+                    </div>
+                    <div class="productoTarjetaTexto">
+                        <p>CAMISETA OFICIAL</p>
+                        <h3>Camiseta Ecuador</h3>
+                        <span>Camiseta 2025/2026 - Marathon</span>
+                        <div>
+                            <strong>$35.00</strong>
+                            <a href="tercerPagina.html">Ver más</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="productoTarjeta">
+                    <div class="contenedorImagen">
+                        <img src="img/camiseta_POR.png" alt="Camiseta Portugal">
+                    </div>
+                    <div class="productoTarjetaTexto">
+                        <p>CAMISETA OFICIAL</p>
+                        <h3>Camiseta Portugal</h3>
+                        <span>Camiseta 2025/2026 - Puma</span>
+                        <div>
+                            <strong>$40.00</strong>
+                            <a href="tercerPagina.html">Ver más</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="productoTarjeta">
+                    <div class="contenedorImagen">
+                        <img src="img/camiseta_UR.png" alt="Camiseta Uruguay">
+                    </div>
+                    <div class="productoTarjetaTexto">
+                        <p>CAMISETA OFICIAL</p>
+                        <h3>Camiseta Uruguay</h3>
+                        <span>Camiseta 2025/2026 - Nike</span>
+                        <div>
+                            <strong>$30.00</strong>
+                            <a href="tercerPagina.html">Ver más</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="productoTarjeta">
+                    <div class="contenedorImagen">
+                        <img src="img/camiseta_FR.png" alt="Camiseta Francia">
+                    </div>
+                    <div class="productoTarjetaTexto">
+                        <p>CAMISETA OFICIAL</p>
+                        <h3>Camiseta Francia</h3>
+                        <span>Camiseta 2025/2026 - Nike</span>
+                        <div>
+                            <strong>$40.00</strong>
+                            <a href="tercerPagina.html">Ver más</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="productoTarjeta">
+                    <div class="contenedorImagen">
+                        <img src="img/camiseta_ARG.png" alt="Camiseta Argentina">
+                    </div>
+                    <div class="productoTarjetaTexto">
+                        <p>CAMISETA OFICIAL</p>
+                        <h3>Camiseta Argentina</h3>
+                        <span>Camiseta 2025/2026 - Adidas</span>
+                        <div>
+                            <strong>$35.00</strong>
+                            <a href="tercerPagina.html">Ver más</a>
+                        </div>
+                    </div>
+                </article>  
+
+                <article class="productoTarjeta">
+                    <div class="contenedorImagen">
+                        <img src="img/camiseta_ESP.png" alt="Camiseta España">
+                    </div>
+                    <div class="productoTarjetaTexto">
+                        <p>CAMISETA OFICIAL</p>
+                        <h3>Camiseta España</h3>
+                        <span>Camiseta 2025/2026 - Adidas</span>
+                        <div>
+                            <strong>$40.00</strong>
+                            <a href="tercerPagina.html">Ver más</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="productoTarjeta">
+                    <div class="contenedorImagen">
+                        <img src="img/camiseta_PB.png" alt="Camiseta Paises Bajos">
+                    </div>
+                    <div class="productoTarjetaTexto">
+                        <p>CAMISETA OFICIAL</p>
+                        <h3>Camiseta Paises Bajos</h3>
+                        <span>Camiseta 2025/2026 - Nike</span>
+                        <div>
+                            <strong>$35.00</strong>
+                            <a href="tercerPagina.html">Ver más</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="productoTarjeta">
+                    <div class="contenedorImagen">
+                        <img src="img/camiseta_ING.png" alt="Camiseta Inglaterra">
+                    </div>
+                    <div class="productoTarjetaTexto">
+                        <p>CAMISETA OFICIAL</p>
+                        <h3>Camiseta Inglaterra</h3>
+                        <span>Camiseta 2025/2026 - Nike</span>
+                        <div>
+                            <strong>$30.00</strong>
+                            <a href="tercerPagina.html">Ver más</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="productoTarjeta">
+                    <div class="contenedorImagen">
+                        <img src="img/camiseta_ALM.png" alt="Camiseta Alemania">
+                    </div>
+                    <div class="productoTarjetaTexto">
+                        <p>CAMISETA OFICIAL</p>
+                        <h3>Camiseta Alemania</h3>
+                        <span>Camiseta 2025/2026 - Adidas</span>
+                        <div>
+                            <strong>$40.00</strong>
+                            <a href="tercerPagina.html">Ver más</a>
+                        </div>
+                    </div>
+                </article>                  
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerContenedor">
+            <div>
+                <div class="logo">
+                    <h1 style="color: var(--colorBlanco) ">GOLAZO<br><span>Jerseys</span></h1>
+                </div>
+                <p>La camiseta que te conecta con tu equipo, su historia y cada gol inolvidable.</p>
+            </div>
+
+            <div>
+                <h2>EXPLORA</h2>
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="tercerPagina.html">Ligas y selecciones</a>
+            </div>
+
+            <div>
+                <h3>SITIOS OFICIALES</h3>
+                <a href="https://www.fifa.com/es/home">FIFA</a>
+                <a href="https://es.uefa.com/">UEFA</a>
+                <a href="https://www.conmebol.com/">CONMEBOL</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
